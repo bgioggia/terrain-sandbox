@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=3 uid="uid://ca7yoq1lg2bel"]
+
+[ext_resource type="Script" path="res://scripts/ground.gd" id="1_w7s2l"]
+[ext_resource type="PackedScene" uid="uid://cq87rdkpgwvj0" path="res://scenes/cam.tscn" id="2_d8m7f"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_257hu"]
+
+[sub_resource type="Skin" id="Skin_fse7s"]
+
+[node name="ground" type="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.37119, 1.57336, -4.70409)
+mesh = SubResource("ArrayMesh_257hu")
+skin = SubResource("Skin_fse7s")
+script = ExtResource("1_w7s2l")
+
+[node name="cam" parent="." instance=ExtResource("2_d8m7f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.88041, 6.08011)

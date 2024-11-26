@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bqieekqh46i42"]
+
+[ext_resource type="PackedScene" uid="uid://cq87rdkpgwvj0" path="res://scenes/cam.tscn" id="1_nnxfl"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_l7tv7"]
+
+[node name="Node3D" type="MeshInstance3D"]
+mesh = SubResource("CylinderMesh_l7tv7")
+
+[node name="cam" parent="." instance=ExtResource("1_nnxfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.300845, 0, 1.45151)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.330854, 0.138155, 3.82591)
