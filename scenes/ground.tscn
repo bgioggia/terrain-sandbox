@@ -8,10 +8,18 @@
 [sub_resource type="Skin" id="Skin_fse7s"]
 
 [node name="ground" type="MeshInstance3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.37119, 1.57336, -4.70409)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47.6932, -24.1324, -109.5)
 mesh = SubResource("ArrayMesh_257hu")
 skin = SubResource("Skin_fse7s")
 script = ExtResource("1_w7s2l")
 
 [node name="cam" parent="." instance=ExtResource("2_d8m7f")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.88041, 6.08011)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0151939, 4.8596, 6.06424)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.743402, 0.668845, 0, -0.668845, 0.743402, -0.0541916, 7.36013, 16.1054)
+spot_range = 1081.51
+spot_angle = 57.43
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.330854, 0.138155, 3.82591)
